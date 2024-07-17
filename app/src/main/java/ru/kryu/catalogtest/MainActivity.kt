@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CatalogTestTheme {
-
+                CatalogNavGraph(modifier = Modifier.fillMaxSize())
             }
         }
     }
