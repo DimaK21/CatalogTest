@@ -5,5 +5,5 @@ import ru.kryu.catalogtest.domain.model.Product
 import ru.kryu.catalogtest.utils.Resource
 
 interface ProductRepository {
-    fun getProducts(slug: String): Flow<Resource<List<Product>>>
+    suspend fun getProducts(slug: String): Flow<Resource<List<Product>>>
 }

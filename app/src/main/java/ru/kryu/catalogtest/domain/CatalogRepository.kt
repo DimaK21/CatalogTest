@@ -5,5 +5,5 @@ import ru.kryu.catalogtest.domain.model.Category
 import ru.kryu.catalogtest.utils.Resource
 
 interface CatalogRepository {
-    fun getCategories(): Flow<Resource<List<Category>>>
+    suspend fun getCategories(): Flow<Resource<List<Category>>>
 }

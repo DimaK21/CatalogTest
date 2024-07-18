@@ -95,5 +95,6 @@ class RetrofitNetworkClient @Inject constructor(
     companion object {
         const val CODE_NO_INTERNET = -1
         const val CODE_EXCEPTION = -2
+        const val CODE_SUCCESS = 200
     }
 }
